@@ -2,6 +2,14 @@
 
 Plugin / Widget to add a timeline to your website
 
+Requeriments:
+
+- Elementor
+
+Usage:
+
+Download as a zip file and install the plugin on your WordPress site.
+
 Example: 
 
 ![image](https://github.com/eduardvives74/Widgets-Elementor/assets/53199304/9a0af5f6-ffa3-4335-876c-d230f066edb5)
