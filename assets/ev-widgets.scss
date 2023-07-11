@@ -1,0 +1,63 @@
+// STYLES TIME LINE
+.ev-timeline {
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+  .line-time {
+    width: 2px;
+    height: 100%;
+    background: #d3d3e0;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 5px);
+    z-index: 5;
+    @media (max-width: 991.98px) {
+      left: 15px;
+    }
+  }
+  .line-time-scroll {
+    width: 4px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 6px);
+    background-color: rgb(0, 165, 0);
+    z-index: 6;
+  }
+  .timeline-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .left-item,
+    .right-item {
+      width: calc(50% - 10px);
+    }
+    .pointer {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 19px);
+      z-index: 7;
+      background-color: rgba($color: #d3d3e0, $alpha: 0.2);
+      &::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        background-color: #d3d3e0;
+      }
+      &.active {
+        background-color: rgba($color: rgb(0, 165, 0), $alpha: 0.2);
+        &::before {
+          background-color: rgb(0, 165, 0);
+        }
+      }
+    }
+  }
+}
